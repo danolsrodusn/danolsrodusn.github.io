@@ -61,6 +61,20 @@ h2 { margin-bottom: 24px; font-family: var(--serif); font-size: clamp(44px, 5vw,
 .note-card p { max-width: 385px; margin: 0; color: var(--muted); font-size: 13px; }
 .card-link { justify-self: end; border-bottom: 1px solid var(--ink); padding-bottom: 5px; font-size: 11px; font-weight: 600; white-space: nowrap; }
 .card-link span { margin-left: 7px; font-size: 15px; }
+.article-archive { margin-top: 78px; border-top: 1px solid var(--ink); }
+.long-note { display: grid; grid-template-columns: 22% 1fr; gap: 20px; padding: 54px 0; border-bottom: 1px solid var(--line); }
+.long-note h3 { max-width: 700px; margin-bottom: 22px; font-family: var(--serif); font-size: clamp(32px, 4vw, 54px); font-weight: 400; line-height: .98; }
+.long-note h4 { margin: 34px 0 10px; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; }
+.long-note p, .long-note li { max-width: 680px; color: var(--muted); font-size: 15px; }
+.long-note ul, .long-note ol { max-width: 680px; margin: 0 0 20px; padding-left: 20px; }
+.long-note a { color: var(--coral); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.about-details { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7%; max-width: 850px; margin-top: 58px; padding-top: 34px; border-top: 1px solid rgba(243,241,234,.25); }
+.about-details p, .about-details li { color: rgba(243,241,234,.7); font-size: 13px; }
+.about-details strong { color: var(--paper); }
+.detail-label { color: var(--lime) !important; font-size: 11px !important; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.about-details blockquote { margin: 0 0 38px; padding-left: 18px; border-left: 2px solid var(--coral); color: var(--paper); font-family: var(--serif); font-size: 22px; line-height: 1.15; }
+.about-details cite { display: block; margin-top: 10px; color: rgba(243,241,234,.55); font-family: var(--sans); font-size: 10px; font-style: normal; letter-spacing: .08em; text-transform: uppercase; }
+.about-details ul { margin: 0; padding-left: 18px; }
 
 .about-section { display: grid; grid-template-columns: 30% 1fr; gap: 7%; align-items: center; padding: 78px 7.5%; background: var(--ink); color: var(--paper); }
 .about-stamp { display: grid; place-content: center; width: 160px; height: 160px; border: 1px solid rgba(243,241,234,.45); border-radius: 50%; font-family: var(--serif); font-size: 52px; line-height: .7; text-align: center; transform: rotate(-9deg); }
@@ -85,6 +99,9 @@ h2 { margin-bottom: 24px; font-family: var(--serif); font-size: clamp(44px, 5vw,
   .notes-section, .about-section { display: block; padding: 75px 0; }
   .section-heading { margin-bottom: 55px; }
   .section-note { max-width: 300px; }
+  .article-archive { margin-top: 55px; }
+  .long-note { display: block; padding: 40px 0; }
+  .long-note .note-meta { margin-bottom: 22px; }
   .note-card { grid-template-columns: 40px 1fr; gap: 0 16px; padding: 25px 0; }
   .note-meta { grid-row: span 2; }
   .note-meta span:not(:first-child) { display: none; }
@@ -92,6 +109,8 @@ h2 { margin-bottom: 24px; font-family: var(--serif); font-size: clamp(44px, 5vw,
   .note-card p { margin-top: 4px; }
   .card-link { grid-column: 2; justify-self: start; margin-top: 17px; }
   .about-stamp { width: 115px; height: 115px; margin-bottom: 55px; font-size: 38px; }
+  .about-details { display: block; margin-top: 48px; }
+  .about-details > div + div { margin-top: 42px; }
   .site-footer { flex-wrap: wrap; padding: 24px 0; }
   .site-footer span:nth-child(2) { order: 3; width: 100%; }
 }
